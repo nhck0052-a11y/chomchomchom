@@ -78,10 +78,20 @@
         </section>
     </main>
 
+    <section id="animal-test">
+        <h2>동물상 테스트</h2>
+        <div>Teachable Machine Image Model</div>
+        <button type="button" onclick="init()">시작</button>
+        <div id="webcam-container"></div>
+        <div id="label-container"></div>
+    </section>
+
     <footer>
         <p>&copy; 2024 드론월드. All rights reserved.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
     <script src="main.js"></script>
     <div id="disqus_thread"></div>
     <script>

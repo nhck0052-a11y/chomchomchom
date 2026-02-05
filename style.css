@@ -8,6 +8,15 @@
     --shadow-color: rgba(0, 168, 255, 0.2);
 }
 
+body.light-mode {
+    --primary-color: #007bff;
+    --secondary-color: #f8f9fa;
+    --background-color: #ffffff;
+    --text-color: #333;
+    --card-background-color: #f8f9fa;
+    --shadow-color: rgba(0, 123, 255, 0.2);
+}
+
 body {
     font-family: 'Noto Sans KR', sans-serif;
     background-color: var(--background-color);
@@ -62,6 +71,20 @@ nav ul li a {
 
 nav ul li a:hover {
     color: var(--primary-color);
+}
+
+.theme-switcher {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.theme-switcher:hover {
+    background-color: #007bff;
 }
 
 main {

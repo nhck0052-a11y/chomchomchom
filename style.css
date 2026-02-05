@@ -291,10 +291,38 @@ footer {
 
 @media (max-width: 768px) {
     nav ul {
-        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+        text-align: center;
+        display: none; /* Keep it hidden by default, will be toggled by JS later if needed */
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
     }
 
     .hero-text h1 {
         font-size: 2.5rem;
+    }
+
+    #services .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #services .card {
+        width: 90%;
+    }
+
+    #animal-test #image-upload,
+    #animal-test #predict-button {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #animal-test #selected-image {
+        max-width: 90%;
     }
 }

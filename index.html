@@ -81,8 +81,9 @@
     <section id="animal-test">
         <h2>동물상 테스트</h2>
         <div>Teachable Machine Image Model</div>
-        <button type="button" onclick="init()">시작</button>
-        <div id="webcam-container"></div>
+        <input type="file" id="image-upload" accept="image/*">
+        <img id="selected-image" style="max-width: 300px; height: auto; display: none; margin: 1rem auto;">
+        <button type="button" id="predict-button" disabled>판단하기</button>
         <div id="label-container"></div>
     </section>
 
